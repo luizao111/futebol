@@ -1,0 +1,190 @@
+
+:root {
+    --branco-principal: hwb(323 33% 41%);
+    --cinza-secundario: #d30101;
+    --botao-verde: #6134a8;
+    --cor-de-fundo: #30501277;
+    --fonte-principal: 'Inter', sans-serif;
+    --botao-verde-efeito: #000000;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--azul-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 3em;
+    background-color: #0f161c;
+}
+
+.header__logo {
+    width: 50px;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.nav__lista {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav__lista a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-weight: 700;
+}
+
+.nav__lista a:hover {
+    color: var(--botao-verde);
+}
+
+.principal {
+    background-image: url("https://www.svgrepo.com/show/302876/stadium.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5em 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__botao {
+    background-color: var(--botao-verde);
+    border-radius: 5px;
+    padding: 1em 2em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin: 1em 0;
+    transition: background-color 0.3s;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-verde-efeito);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+    padding-top: 20px;
+}
+
+.container__titulo {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 2em 0;
+    max-width: 100%;
+}
+
+.secundario__imagem {
+    width: 45%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 4em 0;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--branco-principal);
+    margin-bottom: 0.5em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 4em 0;
+
+}
+
+.dispositivos {
+    text-align: center;
+    padding: 4em 2em;
+
+}
+
+.dispositivos__titulo {
+    font-size: 36px;
+    color: var(--vermelho-principal);
+    margin-bottom: 1em;
+}
+
+.lista__item {
+    font-size: 24px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    padding: 3em 2em;
+    background-color: #0f161c;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 2em 0;
+    gap: 2em;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.lista__link a:hover {
+    color: var(--botao-verde);
+}
+
+.rodape__texto {
+    margin: 0.5em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
